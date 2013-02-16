@@ -1,0 +1,251 @@
+/*
+Theme Name: Zendsay
+Theme URI: http://thinkclay.com/
+Description: Zendsay
+Version: 1.0.0
+Author: Clay McIlrath
+Author URI: http://thinkclay.com/
+Tags: two-columns
+
+	This theme was designed and built by Clay McIlrath,
+	whose blog you will find at http://thinkclay.com/
+*/
+
+
+/* HTML Default Rules */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{font-size:10px;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}
+
+body { 
+	background: #1a1002 url('media/img/bg.jpg') no-repeat -69.5em 0;
+	color: #4d4327;
+	font: normal 10px 'Centrale Sans Light', Verdana, Helvetica, Arial, sans-serif;
+}
+
+a { color: #448065; text-decoration: none; }
+a:hover { color: #66a287; }
+.content a img { padding: 0 1em; }
+
+p { font-size: 1.2em; line-height: 1.875em; padding: 1em 0; }
+ul { padding: 1em 0; }
+blockquote { background: #e8ffd2; border: 1px solid #d1f1b2; margin: 1em; padding: 0 1em; }
+small { font-size: .75em; }
+hr.clear { clear: both; height: 0; border: none; visibility: hidden; }
+hr { background: #574615; clear: both; border: none; height: 1px; margin: 1em 0; }
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+h1 { font-size: 1.75em; }
+	h1#h1 { display: none; }
+h2 { color: #9b9071; font-size: 1.6em; font-weight: normal; }
+	#sidebar h2 { color: #7fa528; margin: .5em 0; }
+h3 { color: #2b2105; font-size: 1.8em; margin-top: .5em; }
+	h3#comments, #respond h3 { color: #fff; padding: 1em 0; }
+h4, cite { font-size: 1.5em; font-style: italic; }
+h5, th { font-size: 1.4em; }
+
+label { padding: .5em; }
+input[type="text"], textarea, table.data tr { color: #66a50c; border: 1px solid #bbe156; padding: .25em; }
+input:focus, textarea:focus, input[type="submit"]:hover, table.data tr:hover { background: #ddffaf; color: #000; }
+
+ol li { list-style: decimal; }
+pre { line-height: 1.4em; margin: 1em -1em; overflow-x: scroll; padding: 1em; }
+td, th { padding: .5em; text-align: left; }
+
+.alignleft, img.avatar { float: left; padding-right: 1.25em; padding-top: 1em; }
+	p.alignleft { padding: 1em 2em; }
+.alignright { float: right; padding-left: 1.25em; padding-top: 1em; }
+	p.alignright { padding: 1em 2em; }
+.flickr-image img { padding: .5em; }
+.size-thumbnail { border: .5em solid #e8e2d6; margin: 1.3em; }
+	.size-thumbnail:hover { border-color: #c6c0b4; }
+
+.hidden { display: none; }
+.clear { clear: both; }
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+
+#footer { background: url(images/bg-footer.png) repeat-x top; margin-top: 3em; padding: 1em 0; }
+	#footer #first { float: left; width: 31em; }
+	#footer #second { float: left; padding-left: 5em; width: 31em; }
+	#footer #third { float: left; padding-left: 3em; width: 27em; }
+
+.container { clear: both; margin: 0 0 0 3em; }
+
+	#content { 
+		float: left; 
+		margin-top: 4em;
+		width: 68.5em; 
+	}
+	#content.homepage { color: #a39f7d; }
+		#content #disqus_thread { background: #fff; padding: 2em; }
+		
+	#sidebar { float: left; margin-right: 7em; width: 27em; }
+		#searchform { }
+			#searchform #s { 
+				background: #1a1002; 
+				border: none; 
+				color: #6b5c4b; 
+				float: left;
+				font-size: 1.3em;
+				padding-left: 10px; 
+				width: 185px; 
+			}
+			#searchform #searchsubmit { 
+				background: none; 
+				border: none; 
+				color: #997223; 
+				float: right; 
+				font: 1.25em "Calisto MT", Georgia, sans-serif;
+				text-transform: uppercase;
+			}
+				#searchform #searchsubmit:hover { color: #fff; cursor: pointer; }
+			
+		.widget { padding: 1em 0; }
+		#content ul li, #sidebar ul li, #footer ul li { font-size: 12px; }
+			#sidebar ul li a, #footer ul li a { border-top: 1px solid #2d1e00; display: block; padding: .5em 0; }
+			#sidebar ul li a:hover, #footer ul li a:hover { border-color: #3e2f11; }
+		
+		#sidebar a:hover { color: #fff; }
+
+.more { background: url("images/bg_more1.png") no-repeat 95% -1.5em; display: block; height: 9em; text-indent: -999em; }
+	.more:hover { background-position: 95% 0; }
+	
+.navigation { font-size: 15px; }
+	
+.logo { 
+	background: url('media/img/logo-thinkclay-full.png') no-repeat 0 0; 
+	display: block; 
+	height: 21em;
+	margin-bottom: 3em; 
+	opacity: .8;
+	text-indent: -999em; 
+}
+.logo:hover { opacity: 1; }
+		
+/* Posts */
+.entry { 
+	background: #fff;
+	margin-bottom: 3em; 
+	padding: 2em 2em 2em 2em;
+}
+.single .entry { background: #fff url("images/bg_entry.jpg") no-repeat top left; }
+.homepage .entry { 
+	background: url("images/bg-entry.png"); 
+	border: 1px solid #1c1509;
+	box-shadow: inset 0 0 2em #000;
+}
+	
+	.post { float: left; padding-left: 2em; width: 47em; }
+		.post li { font-size: 1.2em; margin: .75em 0; }
+		.post img { max-width: 100%; }
+		.post img.size-thumbnail { border: .35em solid #e8e2d6; margin: .5em; }
+			.post img.size-thumbnail:hover { border-color: #c6c0b4; }
+
+	.post-image { display: block; float: left; height: 200px; margin-right: 2.25em; overflow: hidden; position: relative; width: 300px; }
+		.post-image img { margin: 0; padding: 0; }
+		
+
+	.date { color: #002e53; height: 5.5em; margin: 0 0 7em 2.2em; text-align: center; width: 5.5em; }
+	img.avatar { height: auto; width: auto; }
+	.date .day { display: block; font: 3.5em "Calisto MT", Georgia, serif; letter-spacing: -.05em; line-height: 1em; }
+	
+	.iLikeThis .counter { 
+		background: url("images/heart.png") no-repeat left top; 
+		color: #666;
+		display: block; 
+		font-size: 12px; 
+		font-weight: bold;
+		padding: .35em 0 .5em 2.5em; 
+	}
+	.iLikeThis .counter a { cursor:pointer; }
+	.iLikeThis .counter a.image { background: url("images/add.png") center right no-repeat; padding:0 25px 0 0; }
+
+	#respond { color: #fff; }
+	.commentcount { float: right; margin-top: -2.4em; }
+		.commentcount a { background: #d9f473; border: 1px solid #d9f473; font-weight: bold; padding: .5em .75em; }
+		.commentcount a:hover { border-color: #a6c140; }
+		
+	.postmeta { float: left; width: 13em; }
+
+	.commentlist li { background: #fff; -moz-border-radius: 1em; -webkit-border-radius: 1em; margin: 2em; padding: 2em; }
+
+	ol.commentlist { margin-left: 2em; }
+	
+	
+/* Navigation */
+#nav { float: left; padding-left: 7em; }
+	#nav li { float: left; height: 4em; list-style: none; }
+
+	#nav li a { background: url('images/bg_nav.png') no-repeat top left; margin-right: 2em; display: block; height: 4em; text-indent: -999em; }
+
+	#nav #home { background-position: 1em 0; width: 7em; }
+		#nav #home:hover, #nav #home.selected { background-position: 1em -4em; }
+		
+	#nav #about { background-position: -9em 0; width: 8em; }
+		#nav #about:hover, #nav #about.selected { background-position: -9em -4em; }
+		
+	#nav #design { background-position: -19em 0; width: 9em; }
+		#nav #design:hover, #nav #design.selected { background-position: -19em -4em; }
+		
+	#nav #development { background-position: -30em 0; width: 13em; }
+		#nav #development:hover, #nav #development.selected { background-position: -30em -4em; }
+		
+	#nav #photography { background-position: -45em 0; width: 13em; }
+		#nav #photography:hover, #nav #photography.selected { background-position: -45em -4em; }
+		
+	#nav #freebies { background-position: -60em 0; width: 8em; }
+		#nav #freebies:hover, #nav #freebies.selected { background-position: -60em -4em; }
+		
+	#nav #wallpaper { display: none; }
+	#nav #wordpress { display: none; }
+
+
+.overlay { 
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.5;
+	opacity:.50;
+}
+.cloud { 
+	background: url("images/bg_header1.png") no-repeat;
+	display: none;
+	height: 43em; 
+	position: absolute;
+	width: 116.3em;
+	z-index:1002;
+    
+}
+	.cloud .close { float: left; margin: 12.5em 0 0 13em; }
+	.cloud .wrap { float:left; height:24em; margin: 9.5em; overflow-y:auto; width:71em; }
+	
+/* Portfolio */
+.folio { 
+	border: .75em solid #e8e2d6; 
+	cursor: pointer; 
+	float: left; 
+	height: 20em; 
+	margin:.75em 0; 
+	overflow: hidden; 
+	position: relative; 
+	width: 30em; 
+}
+	.folio * { color: #2f2105; }
+	.folio a:hover { color: #000; }
+
+.folio.clear { margin-right: 1.5em; }
+
+.folio-desc { 
+	background: url("images/bg_folio-desc.png");
+	display: none;
+	height: 18em; 
+	position: absolute; 
+	top: 0; 
+	text-align: center; 
+	padding: 1em; 
+	width: 28em; 
+}

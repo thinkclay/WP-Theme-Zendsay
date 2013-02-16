@@ -1,0 +1,123 @@
+body { 
+	background: #1a1002 url('/media/img/bg.jpg') no-repeat center 0; 
+	font-family: 'Centrale Sans Light';
+	font-size: 10px;
+	text-shadow: 0 1px 1px #000;
+}
+body#blog {
+	background: #1a1002 url('/media/img/bg-blog.jpg') no-repeat 0 0;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 { margin: .15em 0 .5em; }
+
+h1 {
+	color: #604f27;
+	font-size: 3.2em;
+}
+
+h2 {
+	color: #284538;
+	font-size: 1.6em;
+}
+
+a { color: #448065; text-decoration: none; }
+a:hover { color: #66a287; }
+
+article {
+	padding: 2em 0;
+}
+	article .logo { 
+		float: left;
+		height: 65px;
+		padding: 0 1em 0 0;
+		width: 80px;
+	}
+
+	article h1 {
+		margin: 0 0 .35em 0;
+		text-transform: lowercase;
+	}
+
+	article h2 {
+		letter-spacing: -0.1em;
+		text-transform: uppercase;
+	}
+
+.thinkclay .logo { background: url('/media/img/logo-thinkclay-bg.png') no-repeat; }
+.thinkclay h1 a { color: #849900; }
+.thinkclay h1 a:hover { color: #304118; }
+
+.lionetics .logo { background: url('/media/img/logo-lionetics-bg.png') no-repeat; }
+.lionetics h1 a { color: #bf7310; }
+.lionetics h1 a:hover { color: #422e19; }
+
+#logo { 
+	background: url('/media/img/logo-bg.png') no-repeat 0 0;
+	display: block;
+	height: 92px;
+	margin: 40px auto;
+	width: 530px;
+}
+
+#main {
+	margin: 20px auto;
+	width: 48%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1140px) {
+
+	body {
+		font-size: 8px;
+	}
+
+	#logo { margin-left: 20%; }
+
+	#main {
+		margin: 0 0 0 21%;
+		width: 70%;
+	}
+
+	article .logo {
+		width: 70px;
+	}
+	
+}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		font-size: 8px;
+		-webkit-text-size-adjust: none;
+	}
+
+	#logo { margin-left: 5%; }
+
+	#main {
+		margin: 0 5%;
+		width: 100%;
+	}
+}
